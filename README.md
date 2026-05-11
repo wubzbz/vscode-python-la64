@@ -1,5 +1,55 @@
 # Python extension for Visual Studio Code
 
+⚠️ **Target Platform: linux-loong64**(only)
+
+## Note: This is an Unofficial Fork
+
+This repository is a **community-maintained** fork of the official VSCode Python extension, specifically ported to support the **LoongArch64** architecture. **This is NOT an official Microsoft product** and is not supported by the original maintainers. And this project is **NOT governed, signed, or endorsed by Microsoft**.
+
+- Original Project: [link to original repo](https://github.com/microsoft/vscode-python).
+
+- Support: Community-supported. Issues specific to LoongArch64 should be reported [here](https://github.com/wubzbz/vscode-python-la64/issues).
+
+### Why a LoongArch64-specific Build?
+
+While the official [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) provides pre-built binaries for common architectures like x64 and ARM64, it does not include native LoongArch64 (LA64) support. This project exists to bridge that gap.
+
+### Read More
+
+- [How to build on your machine](./BUILD_LA64.md)
+- [Known issues and solution](./KNOWN_ISSUE.md)
+- [Code of conduct](./CODE_OF_CONDUCT.md)
+- [Support page](./SUPPORT.md)
+- [Security page](./SECURITY.md)
+
+
+## Project Philosophy
+
+### Respect for Upstream Project
+
+- **Core functionality preserved**: Core features remain unchanged
+
+- **Copyright integrity**: All original copyright notices, license headers, and attribution are preserved without modification
+
+- **Codebase alignment**: We track upstream changes and aim to minimize divergence
+
+## License
+
+This fork is released under the same MIT License as the original project.  
+All original copyright notices and license terms are retained.  
+The software is provided “**as is**”, without warranty of any kind.  
+See [LICENSE](./LICENSE) for the full license text.
+
+## Trademarks
+
+This project may reference Microsoft and third-party trademarks.
+Such references follow [Microsoft’s Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general)
+and do not imply endorsement. All trademarks are the property of their respective owners.
+
+---
+
+# Original Readme
+
 A [Visual Studio Code](https://code.visualstudio.com/) [extension](https://marketplace.visualstudio.com/VSCode) with rich support for the [Python language](https://www.python.org/) (for all [actively supported Python versions](https://devguide.python.org/versions/#supported-versions)), providing access points for extensions to seamlessly integrate and offer support for IntelliSense (Pylance), debugging (Python Debugger), formatting, linting, code navigation, refactoring, variable explorer, test explorer, environment management (**NEW** Python Environments Extension).
 
 ## Support for [vscode.dev](https://vscode.dev/)
