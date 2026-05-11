@@ -81,20 +81,6 @@ def native_build(session: nox.Session):
             )
 
         ext = sysconfig.get_config_var("EXE") or ""
-        target_binary = dest_dir / "bin" / f"pet{ext}"
-
-        # If binary already exists and is executable, skip building
-        if target_binary.exists() and os.access(target_binary, os.X_OK):
-            session.log(f"Found existing pet binary at {target_binary}, skipping cargo build")
-            # Still clean up .vscodeignore exclusion
-            vscode_ignore = EXT_ROOT / ".vscodeignore"
-            remove_patterns = ("python-env-tools/bin/**",)
-            lines = vscode_ignore.read_text(encoding="utf-8").splitlines()
-            filtered_lines = [line for line in lines if not line.startswith(remove_patterns)]
-            vscode_ignore.write_text("\n".join(filtered_lines) + "\n", encoding="utf-8")
-            return
-
-        # Otherwise build from source
         target = os.environ.get("CARGO_TARGET", None)
 
         session.run("cargo", "fetch", external=True)
@@ -118,8 +104,8 @@ def native_build(session: nox.Session):
                 external=True,
             )
             source = source_dir / "target" / "release" / f"pet{ext}"
-            
-        shutil.copy(source, target_binary)
+        dest = dest_dir / "bin" / f"pet{ext}"
+        shutil.copy(source, dest)
 
     # Remove python-env-tools/bin exclusion from .vscodeignore
     vscode_ignore = EXT_ROOT / ".vscodeignore"
