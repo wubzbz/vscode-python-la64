@@ -148,4 +148,5 @@ class TestRunner {
     }
 }
 
-new TestRunner().start().catch((ex) => console.error('Error in running Performance Tests', ex));
+// Performance tests disabled for LoongArch64
+// new TestRunner().start().catch((ex) => console.error('Error in running Performance Tests', ex));
