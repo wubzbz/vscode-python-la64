@@ -1,6 +1,6 @@
 {
     "name": "python",
-    "displayName": "Python",
+    "displayName": "Python for LoongArch",
     "description": "Python language support with extension access points for IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, refactoring, unit tests, and more.",
     "version": "2026.4.0",
     "featureFlags": {
@@ -16,7 +16,7 @@
             "description": "Only Partial IntelliSense supported."
         }
     },
-    "publisher": "ms-python",
+    "publisher": "wubzbz",
     "enabledApiProposals": [
         "contribEditorContentMenu",
         "quickPickSortByLabel",
@@ -28,19 +28,15 @@
         "notebookReplDocument",
         "notebookVariableProvider"
     ],
-    "author": {
-        "name": "Microsoft Corporation"
-    },
     "license": "MIT",
-    "homepage": "https://github.com/Microsoft/vscode-python",
+    "homepage": "https://github.com/wubzbz/vscode-python-la64",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Microsoft/vscode-python"
+        "url": "https://github.com/wubzbz/vscode-python-la64"
     },
     "bugs": {
-        "url": "https://github.com/Microsoft/vscode-python/issues"
+        "url": "https://github.com/wubzbz/vscode-python-la64/issues"
     },
-    "qna": "https://github.com/microsoft/vscode-python/discussions/categories/q-a",
     "icon": "icon.png",
     "galleryBanner": {
         "color": "#1e415e",
@@ -1759,7 +1755,7 @@
         "@typescript-eslint/eslint-plugin": "^6.21.0",
         "@typescript-eslint/parser": "^6.21.0",
         "@vscode/test-electron": "^2.3.8",
-        "@vscode/vsce": "^2.27.0",
+        "@vscode/vsce": ">=2.24.0 <=2.26.1",
         "bent": "^7.3.12",
         "chai": "^4.1.2",
         "chai-arrays": "^2.0.0",

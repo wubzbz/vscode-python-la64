@@ -315,7 +315,7 @@ class EnvExtApis implements IDiscoveryAPI, Disposable {
             }
         } catch (error) {
             traceError(
-                `Failed to resolve environment "${envPath}" via the Python Environments extension (ms-python.vscode-python-envs). Check the "Python Environments" output channel for details.`,
+                `Failed to resolve environment "${envPath}" via the Python Environments extension (wubzbz.vscode-python-envs). Check the "Python Environments" output channel for details.`,
                 error,
             );
         }

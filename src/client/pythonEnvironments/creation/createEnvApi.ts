@@ -82,13 +82,13 @@ export function registerCreateEnvironmentFeatures(
                         );
                         if (result) {
                             const managerId = result.envId.managerId;
-                            if (managerId === 'ms-python.python:venv') {
+                            if (managerId === 'wubzbz.python:venv') {
                                 sendTelemetryEvent(EventName.ENVIRONMENT_CREATED, undefined, {
                                     environmentType: 'venv',
                                     reason: 'created',
                                 });
                             }
-                            if (managerId === 'ms-python.python:conda') {
+                            if (managerId === 'wubzbz.python:conda') {
                                 sendTelemetryEvent(EventName.ENVIRONMENT_CREATED, undefined, {
                                     environmentType: 'conda',
                                     reason: 'created',

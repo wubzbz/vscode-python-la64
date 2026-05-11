@@ -17,7 +17,7 @@ import { getConfiguration, getWorkspaceFolders } from '../common/vscodeApis/work
 import { traceError, traceLog } from '../logging';
 import { Interpreters } from '../common/utils/localize';
 
-export const ENVS_EXTENSION_ID = 'ms-python.vscode-python-envs';
+export const ENVS_EXTENSION_ID = 'wubzbz.vscode-python-envs';
 
 export function isEnvExtensionInstalled(): boolean {
     return !!getExtension(ENVS_EXTENSION_ID);

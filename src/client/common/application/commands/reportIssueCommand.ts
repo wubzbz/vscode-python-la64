@@ -119,7 +119,7 @@ export class ReportIssueCommandHandler implements IExtensionSingleActivationServ
             });
 
         await this.commandManager.executeCommand('workbench.action.openIssueReporter', {
-            extensionId: 'ms-python.python',
+            extensionId: 'wubzbz.python',
             issueBody: template,
             extensionData: userTemplate.format(
                 pythonVersion,

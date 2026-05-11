@@ -6,7 +6,7 @@
         "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "ms-python.python",
-        "ms-python.vscode-pylance"
+        // "ms-python.python",
+        // "ms-python.vscode-pylance"
     ]
 }

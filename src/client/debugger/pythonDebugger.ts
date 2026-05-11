@@ -10,7 +10,7 @@ interface IPythonDebuggerExtensionApi {
 }
 
 async function activateExtension() {
-    const extension = extensions.getExtension('ms-python.debugpy');
+    const extension = extensions.getExtension('wubzbz.debugpy');
     if (extension) {
         if (!extension.isActive) {
             await extension.activate();

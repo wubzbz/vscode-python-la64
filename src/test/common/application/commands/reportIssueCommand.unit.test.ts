@@ -97,12 +97,12 @@ suite('Report Issue Command', () => {
 
         getExtensionsStub.returns([
             {
-                id: 'ms-python.python',
+                id: 'wubzbz.python',
                 packageJSON: {
                     displayName: 'Python',
                     version: '2020.2',
                     name: 'python',
-                    publisher: 'ms-python',
+                    publisher: 'wubzbz',
                 },
             },
         ]);
