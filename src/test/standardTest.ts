@@ -1,6 +1,6 @@
 import { spawnSync } from 'child_process';
 import * as fs from '../client/common/platform/fs-paths';
-import * as os from 'os';
+// import * as os from 'os';
 import * as path from 'path';
 import { downloadAndUnzipVSCode, resolveCliArgsFromVSCodeExecutablePath, runTests } from '@vscode/test-electron';
 import { JUPYTER_EXTENSION_ID, PYLANCE_EXTENSION_ID } from '../client/common/constants';
@@ -161,7 +161,7 @@ async function start() {
         launchArgs,
         version: channel,
         extensionTestsEnv: { ...process.env, UITEST_DISABLE_INSIDERS: '1' },
-        vscodeExecutablePath,   // use the resolved executable
+        vscodeExecutablePath, // use the resolved executable
     };
     await runTests(options);
 }
