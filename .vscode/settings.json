@@ -28,10 +28,10 @@
             "source.fixAll.eslint": "explicit",
             "source.organizeImports.isort": "explicit"
         },
-        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.defaultFormatter": "loong-vsx.ruff",
     },
     "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.defaultFormatter": "loong-vsx.rust-analyzer",
         "editor.formatOnSave": true
     },
     "[typescript]": {
@@ -50,16 +50,15 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
-    "typescript.tsdk": "./node_modules/typescript/lib", // we want to use the TS server from our node_modules folder to control its version
-    "typescript.preferences.quoteStyle": "single",
-    "javascript.preferences.quoteStyle": "single",
+    "js/ts.tsdk.path": "./node_modules/typescript/lib", // we want to use the TS server from our node_modules folder to control its version
+    "js/ts.preferences.quoteStyle": "single",
     "prettier.printWidth": 120,
     "prettier.singleQuote": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
     "python.languageServer": "Default",
-    "typescript.preferences.importModuleSpecifier": "relative",
+    "js/ts.preferences.importModuleSpecifier": "relative",
     // Branch name suggestion.
     "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
     "git.branchRandomName.enable": true,
