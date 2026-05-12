@@ -14,7 +14,7 @@ and spawning the tests (mimic user starting tests from command line), this way w
 
 // Must always be on top to setup expected env.
 process.env.VSC_PYTHON_PERF_TEST = '1';
-
+/*
 import { spawn } from 'child_process';
 import * as download from 'download';
 import * as fs from '../client/common/platform/fs-paths';
@@ -147,6 +147,6 @@ class TestRunner {
         return destination;
     }
 }
-
+*/
 // Performance tests disabled for LoongArch64
 // new TestRunner().start().catch((ex) => console.error('Error in running Performance Tests', ex));
