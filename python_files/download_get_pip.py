@@ -23,7 +23,8 @@ def _get_package_data():
 
 def _download_and_save(root, version):
     root = pathlib.Path.cwd() if root is None or root == "." else pathlib.Path(root)
-    url = f"https://raw.githubusercontent.com/pypa/get-pip/{version}/public/get-pip.py"
+    # url = f"https://raw.githubusercontent.com/pypa/get-pip/{version}/public/get-pip.py"
+    url = "https://bootstrap.pypa.io/get-pip.py"
     print(url)
     with url_lib.urlopen(url) as response:
         data = response.read()

@@ -157,5 +157,5 @@ def checkout_native(session: nox.Session):
 @nox.session()
 def setup_repo(session: nox.Session):
     install_python_libs(session)
-    # checkout_native(session)
-    # native_build(session)
+    checkout_native(session)
+    native_build(session)
